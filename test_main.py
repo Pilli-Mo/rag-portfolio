@@ -9,7 +9,7 @@ def test_root():
     # Test that the root endpoint returns 200 and the right message
     response = client.get("/")
     assert response.status_code == 200
-    assert response.json() == {"message": "FastAPI is working"}
+    assert response.json() == {"Message": "FastAPI is working!"}
 
 
 def test_ask():
